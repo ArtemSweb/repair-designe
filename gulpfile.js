@@ -1,7 +1,7 @@
 const gulp 					= require('gulp'),
 			browserSync   = require('browser-sync'),
 			cssmin 				= require('gulp-minify-css'),
-			rename  			= require( "gulp-rename" ); 
+			rename  			= require('gulp-rename'); 
 
 gulp.task('style', function () {
 	return gulp.src(['css/*.css', '!css/*.min.css'])
