@@ -1,24 +1,36 @@
-const gulp = require('gulp'),
+const {src, dest, watch} = require('gulp'),
 	browserSync = require('browser-sync'),
 	cssmin = require('gulp-minify-css'),
-	rename = require('gulp-rename');
+	rename = require('gulp-rename'),
+	sass = require('gulp-sass');
 
-gulp.task('style', function () {
+function style() {
 	return gulp.src(['css/*.css', '!css/*.min.css'])
 		.pipe(cssmin())
 		.pipe(rename({
 			suffix: '.min'
 		}))
 		.pipe(gulp.dest('css'));
-});
+};
 
-gulp.task('browser-sync', function () {
+function bs() {
+	servSass();
 	browserSync.init({
 		server: {
 			baseDir: "./"
 		}
 	});
 
-	gulp.watch("./*.html").on('change', browserSync.reload);
-	gulp.watch("./css/*.css").on('change', browserSync.reload);
-});
+	watch("./*.html").on('change', browserSync.reload);
+	watch("./sass/**/*.sass", servSass);
+	watch("./js/*.js").on('change', browserSync.reload);
+};
+
+function servSass() {
+	return src("./sass/*.sass")
+		.pipe(sass())
+		.pipe(dest("./css"))
+		.pipe(browserSync.stream());
+}
+
+exports.serve = bs;
