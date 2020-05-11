@@ -344,7 +344,7 @@ body {
       margin: 0 10px; }
 
 .container {
-  width: 85%;
+  width: 90%;
   max-width: 1256px;
   margin: auto; }
 
@@ -518,31 +518,36 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
-  .container {
-    width: 94%; }
+  .section-title__text {
+    max-width: 25.42rem;
+    line-height: 158.48%;
+    font-size: 1.167rem;
+    margin-top: 2rem; }
   .contacts__phone {
-    margin-right: 1rem;
+    margin-right: 0;
     color: #ffffff;
     text-decoration: none; }
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.916rem; }
-  .hero {
-    padding-top: 12.5rem;
-    height: auto; }
-    .hero__scroll-down {
-      display: none; }
-    .hero__content {
-      margin-right: 0;
-      max-width: 31.25rem; }
-    .hero__text {
-      font-size: 1.5rem;
-      margin-bottom: 2.666rem; }
-    .hero__button {
-      display: block;
-      min-width: 28.2rem;
-      margin-bottom: 1.85rem; } }
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__title {
+    font-size: 1.92rem;
+    line-height: 132.83%;
+    max-width: 22.86rem; }
+  .hero__text {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    max-width: 26.75rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem;
+    margin-right: 0;
+    width: 100%;
+    font-size: 1.08rem; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
