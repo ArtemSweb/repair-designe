@@ -408,7 +408,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 83px;
   background: url(../img/hero-bg.jpg) no-repeat #131313 center/cover;
   height: 100vh;
   color: #ffffff; }
