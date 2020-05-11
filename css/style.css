@@ -357,7 +357,6 @@ body {
   .button:hover {
     cursor: pointer; }
   .button--primary {
-    padding: 20px 28px;
     background-color: #e3b873;
     color: #ffffff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -365,7 +364,6 @@ body {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
-    padding: 17px 45px;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff; }
@@ -434,6 +432,17 @@ body {
     margin-bottom: 3rem; }
   .hero__button {
     margin-right: 20px; }
+    .hero__button--primary {
+      padding: 20px 28px;
+      background-color: #e3b873;
+      color: #ffffff;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+      transition: box-shadow 0.2s; }
+    .hero__button--outline {
+      padding: 17px 45px;
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      color: #ffffff; }
   .hero__instagram {
     position: absolute;
     top: 0;
@@ -451,6 +460,7 @@ body {
     min-width: 17.64rem;
     min-height: 6.92rem;
     background-color: #131313;
+    font-size: 0.857rem;
     font-family: "Yeseva One", cursive;
     text-transform: uppercase;
     text-decoration: none;
@@ -462,7 +472,7 @@ body {
       height: 30px;
       border: 2px solid #e3b873;
       border-radius: 50%;
-      margin-left: 12px; }
+      margin-left: 18px; }
 
 .instagram {
   display: flex;
@@ -509,26 +519,31 @@ body {
     margin-left: 0; } }
 
 @media screen and (max-width: 570px) {
+  .container {
+    width: 94%; }
   .contacts__phone {
-    margin-right: 0;
+    margin-right: 1rem;
     color: #ffffff;
     text-decoration: none; }
   .contacts__button {
     display: none; }
   .title {
     font-size: 1.916rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    margin-right: 0;
-    max-width: 31.25rem; }
-  .hero__text {
-    font-size: 1.5rem;
-    margin-bottom: 2.666rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+  .hero {
+    padding-top: 12.5rem;
+    height: auto; }
+    .hero__scroll-down {
+      display: none; }
+    .hero__content {
+      margin-right: 0;
+      max-width: 31.25rem; }
+    .hero__text {
+      font-size: 1.5rem;
+      margin-bottom: 2.666rem; }
+    .hero__button {
+      display: block;
+      min-width: 28.2rem;
+      margin-bottom: 1.85rem; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
