@@ -349,7 +349,7 @@ body {
   margin: auto; }
 
 .button {
-  padding: 13px 20px;
+  padding: 13px 24px;
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
@@ -357,6 +357,7 @@ body {
   .button:hover {
     cursor: pointer; }
   .button--primary {
+    padding: 20px 28px;
     background-color: #e3b873;
     color: #ffffff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
@@ -364,6 +365,7 @@ body {
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
+    padding: 17px 45px;
     border: 1px solid #ffffff;
     background-color: transparent;
     color: #ffffff; }
@@ -383,14 +385,15 @@ body {
   align-items: center; }
 
 .logo {
+  font-size: 1.075rem;
   color: #e3b873;
   text-transform: uppercase; }
 
 .nav__item {
+  margin-right: 2.857rem;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 2.857rem;
   transition: color 0.2s; }
   .nav__item:hover {
     color: #e3b873; }
@@ -424,8 +427,11 @@ body {
     max-width: 47.857rem;
     margin-left: 4.28rem; }
   .hero__text {
+    line-height: 138%;
     font-size: 1.571rem;
-    max-width: 35.714rem; }
+    max-width: 35.714rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem; }
   .hero__button {
     margin-right: 20px; }
   .hero__instagram {
@@ -433,7 +439,8 @@ body {
     top: 0;
     left: 0;
     max-width: 87px;
-    height: 100%; }
+    height: 100%;
+    font-size: 1rem; }
   .hero__scroll-down {
     position: absolute;
     display: flex;
