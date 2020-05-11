@@ -385,7 +385,8 @@ body {
 .logo {
   font-size: 1.075rem;
   color: #e3b873;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-decoration: none; }
 
 .nav__item {
   margin-right: 2.857rem;
@@ -503,7 +504,7 @@ body {
   .title--accent {
     color: #e3b873; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
   .nav__item {
