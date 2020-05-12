@@ -12,41 +12,58 @@
 			display: none	
 		&__content
 			margin-left: 0
+
+@media screen and ( max-width: 760px)
+	.row
+		flex-direction: column
+		align-items: center
+	.types
+		&__card
+			margin-bottom: 5rem
+	.card
+		margin-bottom: 7rem
+		&__text
+			margin-top: -12rem
+			margin-left: 0			
+
 @media screen and ( max-width: 570px)
-  .section
-    &-title
-      &__text
-        max-width: 25.42rem
-        line-height: 158.48%
-        font-size: 1.167rem
-        margin-top: 2rem
-  .contacts
-    &__phone
-      margin-right: 0
-      color: $light
-      text-decoration: none
-    &__button
-      display: none
-  .title
-    font-size: 1.64rem
-  .hero
-    &__scroll-down
-      display: none
-    &__title
-      font-size: 1.92rem
-      line-height: 132.83%
-      max-width: 22.86rem      
-    &__text
-      font-size: 1.5rem
-      margin-bottom: 3rem
-      max-width: 26.75rem      
-    &__button
-      display: block
-      min-width: 22.86rem
-      margin-bottom: 1.85rem
-      margin-right: 0
-      width: 100%
-      font-size: 1.08rem
+	.section
+		&-title
+			&__text
+				max-width: 25.42rem
+				line-height: 158.48%
+				font-size: 1.167rem
+				margin-top: 2rem
+			&__heading
+				font-size: 1.57rem
+	.contacts
+		&__phone
+			margin-right: 0
+			color: $light
+			text-decoration: none
+		&__button
+			display: none
+	.title
+		font-size: 1.64rem
+	.hero
+		height: 60vh
+		&__scroll-down
+			display: none
+		&__title
+			font-size: 1.92rem
+			line-height: 132.83%
+			max-width: 22.86rem      
+		&__text
+			font-size: 1.5rem
+			margin-bottom: 3rem
+			max-width: 26.75rem      
+		&__button
+			display: block
+			min-width: 22.86rem
+			margin-bottom: 1.85rem
+			margin-right: 0
+			width: 100%
+			font-size: 1.08rem
 @media screen and ( max-height: 530px)
 	.hero
 		&__scroll-down

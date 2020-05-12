@@ -1,0 +1,42 @@
+.designe
+	&__section-title
+		margin-bottom: 3rem
+.section-title
+	&__description
+		text-transform: none
+		margin: 0 auto
+		margin-top: 1.64rem
+		max-width: 52.8rem
+		font-size: 1.428rem
+		font-weight: 400
+		font-family: "Futura Book", sans-serif
+		line-height: 135%
+.card
+	&__pricetag
+		&--long
+			padding: 1.214rem 4rem
+
+@media screen and ( max-width: 760px)
+	.designe
+		background-color: #181818
+	.section-title
+		color: $light
+		&--light
+			color: $light
+		&__heading
+			font-size: 1.83rem
+		&__description
+			max-width: 85%
+			font-size: 1.25rem
+			line-height: 136%
+			font-weight: 400
+	.card
+		&__list
+			&--min
+				.card__item
+					&:nth-child(n+8)
+						display: none
+					&:nth-child(7)
+						&::after
+							content: '...'
+							margin-left: 0.5rem
