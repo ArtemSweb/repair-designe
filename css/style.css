@@ -335,11 +335,13 @@ img {
   margin-top: 8rem;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Yeseva One", cursive; }
+  font-family: "Yeseva One", cursive;
+  color: #131313; }
   .section-title__heading {
-    color: #131313;
     letter-spacing: 0.8px;
     font-size: 1.357rem; }
+  .section-title--light {
+    color: #ffffff; }
   .section-title__image {
     display: flex;
     justify-content: center;
@@ -603,15 +605,13 @@ img {
       margin-left: 0; }
   .designe {
     background-color: #181818; }
-  .section-title {
+  .section-title--light {
     color: #ffffff; }
-    .section-title--light {
-      color: #ffffff; }
-    .section-title__description {
-      max-width: 85%;
-      font-size: 1.25rem;
-      line-height: 136%;
-      font-weight: 400; }
+  .section-title__description {
+    max-width: 85%;
+    font-size: 1.25rem;
+    line-height: 136%;
+    font-weight: 400; }
   .card__list--min .card__item:nth-child(n+8) {
     display: none; }
   .card__list--min .card__item:nth-child(7)::after {
