@@ -591,8 +591,6 @@ img {
     margin-left: 0; } }
 
 @media screen and (max-width: 760px) {
-  .section-title__heading {
-    letter-spacing: 2px; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -609,8 +607,6 @@ img {
     color: #ffffff; }
     .section-title--light {
       color: #ffffff; }
-    .section-title__heading {
-      font-size: 1.83rem; }
     .section-title__description {
       max-width: 85%;
       font-size: 1.25rem;
@@ -629,7 +625,8 @@ img {
     font-size: 1.167rem;
     margin-top: 2rem; }
   .section-title__heading {
-    font-size: 1.57rem; }
+    padding-top: 5rem;
+    font-size: 1.75rem; }
   .contacts__phone {
     margin-right: 0;
     color: #ffffff;
