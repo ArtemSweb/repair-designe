@@ -24,7 +24,31 @@
 		margin-bottom: 7rem
 		&__text
 			margin-top: -12rem
-			margin-left: 0			
+			margin-left: 0	
+	
+	.designe
+		background-color: #181818
+	.section-title
+		color: $light
+		&--light
+			color: $light
+		&__heading
+			font-size: 1.83rem
+		&__description
+			max-width: 85%
+			font-size: 1.25rem
+			line-height: 136%
+			font-weight: 400
+	.card
+		&__list
+			&--min
+				.card__item
+					&:nth-child(n+8)
+						display: none
+					&:nth-child(7)
+						&::after
+							content: '...'
+							margin-left: 0.5rem		
 
 @media screen and ( max-width: 570px)
 	.section
