@@ -26,7 +26,7 @@ function bs() {
 	watch("./*.html").on('change', browserSync.reload);
 	watch("./sass/**/*.sass", servSass);
 	watch("./sass/**/*.scss", servSass);
-	watch("./js/*.js").on('change', browserSync.reload);
+	watch("./js/**/*.js").on('change', browserSync.reload);
 };
 
 function servSass() {
