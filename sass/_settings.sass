@@ -8,15 +8,42 @@ body
 img
 	max-width: 100%
 .section
+	padding: 60px
+	&--dark
+		background-color: $dark
 	&-title
 		margin-top: 8rem
 		text-align: center
-		text-transform: uppercase
 		font-family: $ff-main
 		color: #131313
+		&--left
+			text-align: left
+		&__text
+			font-family: $ff-book
+			color: $light
+			font-size: 1.28rem
+			line-height: 2.07rem
+			max-width: 31.57rem
+			font-weight: normal
 		&__heading
 			letter-spacing: 0.8px
 			font-size: 1.357rem
+			text-transform: uppercase
+			line-height: 138%
+			&--primary
+				color: $accent
+				font-size: 1.92rem
+				letter-spacing: -1.8px
+				font-weight: normal
+		&__word
+			display: flex
+			align-items: center
+			&::after
+				content: ''
+				margin-left: 2.4rem
+				width: 92px
+				height: 1px
+				background-color: $accent
 		&--light
 			color: $light
 		&__image
