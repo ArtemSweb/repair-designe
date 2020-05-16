@@ -66,6 +66,32 @@ $(document).ready(function () {
     $('html, body').animate({
       scrollTop: 0
     }, '300');
+	});
+	
+  // слайдер в секции Завершенные проекты
+  var projectSwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });
+
+  var next = $('.swiper-button-next');
+  var prev = $('.swiper-button-prev');
+  var bullets = $('.swiper-pagination');
+
+  next.css('left', prev.width() + bullets.width() + 40)
+  bullets.css('left', prev.width() + 20)
 
 });
