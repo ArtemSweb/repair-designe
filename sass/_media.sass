@@ -12,12 +12,14 @@
 			display: none	
 		&__content
 			margin-left: 0
+	.swiper-slide__heading--block
+		display: block
 
 @media screen and ( max-width: 760px)
 	.section
 		&-title
 			&__heading
-				padding-top: 1.5rem
+				padding-top: 1.85rem
 	.row
 		flex-direction: column
 		align-items: center
@@ -37,7 +39,7 @@
 			&--light
 				color: $light
 			&__description
-				max-width: 85%
+				max-width: 98%
 				font-size: 1.25rem
 				line-height: 136%
 				font-weight: 400
@@ -69,7 +71,8 @@
 	.swiper
     &-slide 
       &__text
-        flex-basis: 50% 
+        flex-basis: 45%
+				padding-left: 15px
 	.col
 		&-45, &-55
 			max-width: 95%

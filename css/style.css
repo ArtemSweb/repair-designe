@@ -809,11 +809,13 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .swiper-slide__heading--block {
+    display: block; } }
 
 @media screen and (max-width: 760px) {
   .section-title__heading {
-    padding-top: 1.5rem; }
+    padding-top: 1.85rem; }
   .row {
     flex-direction: column;
     align-items: center; }
@@ -829,7 +831,7 @@ img {
   .section-title--light {
     color: #ffffff; }
   .section-title__description {
-    max-width: 85%;
+    max-width: 98%;
     font-size: 1.25rem;
     line-height: 136%;
     font-weight: 400; }
@@ -850,12 +852,14 @@ img {
     .projects .section-title--left {
       padding-top: 0;
       text-align: left; }
-  .swiper-slide__text {
-    flex-basis: 50%; }
+  .swiper {
+    padding-left: 15px; }
+    .swiper-slide__text {
+      flex-basis: 45%; }
   .col-45, .col-55 {
     max-width: 95%; }
   .col-55 {
-    margin-bottom: 0; }
+    margin-bottom: -8rem; }
   .pageup {
     display: none;
     position: fixed;
