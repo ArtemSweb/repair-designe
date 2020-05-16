@@ -8,13 +8,15 @@ body
 img
 	max-width: 100%
 .section
-	padding: 60px
-	&--dark
-		background-color: $dark
+	padding: 1.5rem
 	&-title
 		text-align: center
 		font-family: $ff-main
 		color: #131313
+		&--light
+			color: $light
+		&--dark
+			color: $dark	
 		&--left
 			text-align: left
 		&__text
@@ -30,7 +32,9 @@ img
 			font-size: 1.357rem
 			text-transform: uppercase
 			line-height: 138%
+			font-weight: normal
 			&--primary
+				margin-top: 0
 				color: $accent
 				font-size: 1.92rem
 				letter-spacing: -1.8px
@@ -44,8 +48,6 @@ img
 				width: 92px
 				height: 1px
 				background-color: $accent
-		&--light
-			color: $light
 		&__image
 			display: flex
 			justify-content: center
@@ -56,3 +58,6 @@ img
 				height: 2px
 				background: $accent
 				margin: 0 10px
+	&--dark
+		background-color: $dark
+		color: $light

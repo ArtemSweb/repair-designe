@@ -14,6 +14,10 @@
 			margin-left: 0
 
 @media screen and ( max-width: 760px)
+	.section
+		&-title
+			&__heading
+				padding-top: 1.5rem
 	.row
 		flex-direction: column
 		align-items: center
@@ -28,14 +32,18 @@
 	
 	.designe
 		background-color: #181818
-	.section-title
-		&--light
-			color: $light
-		&__description
-			max-width: 85%
-			font-size: 1.25rem
-			line-height: 136%
-			font-weight: 400
+	.section
+		&-title
+			&--light
+				color: $light
+			&__description
+				max-width: 85%
+				font-size: 1.25rem
+				line-height: 136%
+				font-weight: 400
+			&__word
+				&::after
+					display: none
 	.card
 		&__list
 			&--min
@@ -45,8 +53,28 @@
 					&:nth-child(7)
 						&::after
 							content: '...'
-							margin-left: 0.5rem		
-
+							margin-left: 0.5rem	
+	.projects
+		padding: 0
+		&__row
+			align-items: start
+			margin-top: 0
+		.section
+			&-title
+				&__text
+					max-width: 95%
+				&--left
+					padding-top: 0
+					text-align: left	
+	.swiper
+    &-slide 
+      &__text
+        flex-basis: 50% 
+	.col
+		&-45, &-55
+			max-width: 95%
+		&-55	
+			margin-bottom: 0
 	.pageup 
 		display: none
 		position: fixed
@@ -69,7 +97,6 @@
 				font-size: 1.167rem
 				margin-top: 2rem
 			&__heading
-				padding-top: 5rem
 				font-size: 1.75rem
 	.contacts
 		&__phone
