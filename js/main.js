@@ -72,10 +72,10 @@ $(document).ready(function () {
   var projectSwiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
+    // effect: 'fade',
+    // fadeEffect: {
+    //   crossFade: true
+    // },
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -84,7 +84,17 @@ $(document).ready(function () {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
+		},
+		// Default parameters
+		slidesPerView: 1,
+		spaceBetween: 10,
+		// Responsive breakpoints
+		breakpoints: {
+			640: {
+				slidesPerView: 1,
+				spaceBetween: 40
+			}
+		}
   });
 
   var next = $('.swiper-button-next');
