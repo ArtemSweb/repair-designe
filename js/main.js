@@ -135,4 +135,12 @@ $(document).ready(function () {
 	step_next.css('left', step_prev.width() + step_bullets.width() + 40)
 	step_bullets.css('left', step_prev.width() + 20)
 
+	// переключение слайдов по табам из секции 6 
+	$('.steps-list__item').on('click', function () {
+		$('.steps-list__item').removeClass('steps-list__item--active');
+		$(this).addClass('steps-list__item--active');
+		var index = $(this).data('index');
+		stepsSwiper.slideTo(index);
+	});
+
 });
