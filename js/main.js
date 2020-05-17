@@ -54,36 +54,36 @@ $(document).ready(function () {
 
 //Кнопка прокрутки вверх
 	$(window).scroll(function () {
-    if ($(this).scrollTop() > 1000) {
-      $('.pageup').fadeIn();
-    } else {
-      $('.pageup').fadeOut();
-    }
-  });
+		if ($(this).scrollTop() > 1000) {
+			$('.pageup').fadeIn();
+		} else {
+			$('.pageup').fadeOut();
+		}
+	});
 // плавная прокрутка 
-  $('.pageup').on('click', function (e) {
-    e.preventDefault();
-    $('html, body').animate({
-      scrollTop: 0
-    }, '300');
+	$('.pageup').on('click', function (e) {
+		e.preventDefault();
+		$('html, body').animate({
+			scrollTop: 0
+		}, '300');
 	});
 	
-  // слайдер в секции Завершенные проекты
-  var projectSwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    // effect: 'fade',
-    // fadeEffect: {
-    //   crossFade: true
-    // },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+	// слайдер в секции Завершенные проекты
+	var projectSwiper = new Swiper('.projects-swiper-container', {
+		// Optional parameters
+		loop: true,
+		// effect: 'fade',
+		// fadeEffect: {
+		//   crossFade: true
+		// },
+		pagination: {
+			el: '.projects-swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.projects-swiper-button-next',
+			prevEl: '.projects-swiper-button-prev',
 		},
 		// Default parameters
 		slidesPerView: 1,
@@ -95,13 +95,45 @@ $(document).ready(function () {
 				spaceBetween: 40
 			}
 		}
-  });
+	});
 
-  var next = $('.swiper-button-next');
-  var prev = $('.swiper-button-prev');
-  var bullets = $('.swiper-pagination');
+	var next = $('.swiper-button-next');
+	var prev = $('.swiper-button-prev');
+	var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + bullets.width() + 40)
-  bullets.css('left', prev.width() + 20)
+	next.css('left', prev.width() + bullets.width() + 40)
+	bullets.css('left', prev.width() + 20)
+
+	// слайдер в секции 6 шагов
+	var stepsSwiper = new Swiper('.steps__swiper-container', {
+		// Optional parameters
+		loop: true,
+		// effect: 'fade',
+		// fadeEffect: {
+		// 	crossFade: true
+		// },
+		//Или пагинация цифрами, или "bullets"
+		// pagination: {
+		// 	el: '.steps__swiper-pagination',
+		// 	type: 'fraction',
+		// },
+		pagination: {
+			el: '.steps__swiper-pagination',
+			type: 'bullets',
+			clickable: true
+		},
+		navigation: {
+			nextEl: '.steps__swiper-button-next',
+			prevEl: '.steps__swiper-button-prev',
+		},
+	});
+
+	var next2 = $('.steps__swiper-button-next');
+	var prev2 = $('.steps__swiper-button-prev');
+	var bullets2 = $('.steps__swiper-pagination');
+
+	next2.css('left', prev2.width() + bullets2.width() + 40)
+	bullets2.css('left', prev2.width() + 20)
+
 
 });
