@@ -792,6 +792,8 @@ img {
     margin-right: 0rem; }
     .steps-list__item--active {
       opacity: 1; }
+    .steps-list__item:nth-child(3n) {
+      margin-right: -8.57rem; }
   .steps-list__number {
     font-family: "Yeseva One", cursive;
     text-transform: uppercase;
