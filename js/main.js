@@ -128,12 +128,11 @@ $(document).ready(function () {
 		},
 	});
 
-	var next2 = $('.steps__swiper-button-next');
-	var prev2 = $('.steps__swiper-button-prev');
-	var bullets2 = $('.steps__swiper-pagination');
+	var step_next = $('.steps__swiper-button-next');
+	var step_prev = $('.steps__swiper-button-prev');
+	var step_bullets = $('.steps__swiper-pagination');
 
-	next2.css('left', prev2.width() + bullets2.width() + 40)
-	bullets2.css('left', prev2.width() + 20)
-
+	step_next.css('left', step_prev.width() + step_bullets.width() + 40)
+	step_bullets.css('left', step_prev.width() + 20)
 
 });
