@@ -674,8 +674,10 @@ img {
   color: #ffffff;
   padding: 1.1rem 2.5rem; }
 
-.designe__section-title {
-  margin-bottom: 3rem; }
+.designe {
+  padding-bottom: 3.5rem; }
+  .designe__section-title {
+    margin-bottom: 3rem; }
 
 .section-title__description {
   text-transform: none;
@@ -920,7 +922,7 @@ img {
 
 @media screen and (max-width: 992px) {
   .hero {
-    padding: 147px 0 40px 0;
+    padding: 147px 0 60px 0;
     height: auto; }
   .nav {
     display: none; }
