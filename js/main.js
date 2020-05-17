@@ -135,12 +135,20 @@ $(document).ready(function () {
 	step_next.css('left', step_prev.width() + step_bullets.width() + 40)
 	step_bullets.css('left', step_prev.width() + 20)
 
-	// переключение слайдов по табам из секции 6 
+// переключение слайдов по табам из секции 6 
 	$('.steps-list__item').on('click', function () {
 		$('.steps-list__item').removeClass('steps-list__item--active');
 		$(this).addClass('steps-list__item--active');
 		var index = $(this).data('index');
 		stepsSwiper.slideTo(index);
 	});
+//Чтоб переключало список при клике на точки пагинации
+	stepsSwiper.on('slideChange', (function () {
+		var index = stepsSwiper.activeIndex - 1; //именно -1, чтоб не перескакивало через элемент списка!
+		console.log(index);
+		if (index === 6) index = 0;
+		$('.steps-list__item').removeClass('steps-list__item--active');
+		$('.steps-list__item').eq(index).addClass('steps-list__item--active');
+	}));
 
 });
