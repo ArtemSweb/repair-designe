@@ -146,6 +146,18 @@ $(document).ready(function () {
 		$('.steps-list__item').eq(index).addClass('steps-list__item--active');
 	}));
 
+// запустить анимацию, когда будет в области видимости
+	$(window).scroll(function () {  
+		let card = $('.designe__card');
+		if ($(this).scrollTop() >= $('.designe').offset().top - $(window).height()* 0.8) {
+			for(let i = 0; i <= card.length; i++) {
+				card[i].classList.add(`card--animation-${i+1}`);
+				console.log(card[i]);
+			}
+			// $('.designe__card').addClass('card--animation');
+		}    
+	});
+
 //Инициализируем библиотеку анимаций
 	new WOW().init();
 

@@ -512,15 +512,19 @@ img {
 
 @-webkit-keyframes emerge {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
 
 @keyframes emerge {
   0% {
-    opacity: 0; }
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0); }
   100% {
-    opacity: 1; } }
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
 
 .header {
   position: fixed;
@@ -791,11 +795,18 @@ img {
   .card__pricetag--long {
     padding: 1.1rem 3.75rem;
     bottom: -2rem; }
-  .card:nth-child(1) {
-    -webkit-animation-name: emerge;
-    animation-name: emerge;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s; }
+
+.card--animation-1 {
+  -webkit-animation: emerge 1s 0.5s;
+  animation: emerge 1s 0.5s; }
+
+.card--animation-2 {
+  -webkit-animation: emerge 1s 1s;
+  animation: emerge 1s 1s; }
+
+.card--animation-3 {
+  -webkit-animation: emerge 1s 1.5s;
+  animation: emerge 1s 1.5s; }
 
 .projects {
   padding-top: 5rem;
