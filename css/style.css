@@ -510,6 +510,18 @@ img {
     height: 100%;
     transform: rotate(180deg); }
 
+@-webkit-keyframes emerge {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes emerge {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .header {
   position: fixed;
   top: 0;
@@ -779,6 +791,11 @@ img {
   .card__pricetag--long {
     padding: 1.1rem 3.75rem;
     bottom: -2rem; }
+  .card:nth-child(1) {
+    -webkit-animation-name: emerge;
+    animation-name: emerge;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s; }
 
 .projects {
   padding-top: 5rem;
@@ -1120,7 +1137,8 @@ img {
       color: rgba(255, 255, 255, 0.5); }
     .control__input {
       border-bottom: 1px solid #ffffff;
-      font-size: 1.5rem; }
+      font-size: 1.5rem;
+      color: #ffffff; }
       .control__input::-webkit-input-placeholder {
         color: #ffffff; }
       .control__input::-moz-placeholder {
