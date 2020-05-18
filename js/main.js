@@ -108,15 +108,10 @@ $(document).ready(function () {
 	var stepsSwiper = new Swiper('.steps__swiper-container', {
 		// Optional parameters
 		loop: true,
-		// effect: 'fade',
-		// fadeEffect: {
-		// 	crossFade: true
-		// },
-		//Или пагинация цифрами, или "bullets"
-		// pagination: {
-		// 	el: '.steps__swiper-pagination',
-		// 	type: 'fraction',
-		// },
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		},
 		pagination: {
 			el: '.steps__swiper-pagination',
 			type: 'bullets',

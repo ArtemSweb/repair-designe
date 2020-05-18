@@ -28,8 +28,14 @@
 	font-size: 1.285rem
 	color: $light
 	padding: 0.45rem 0
-	&::placeholder
-		color: $light
+	&--light
+		color: $light	
+		&::placeholder
+			color: $light
+	&--dark
+		color: $dark	
+		&::placeholder
+			color: $dark
 .policy
 	&__checkbox
 		opacity: 0
