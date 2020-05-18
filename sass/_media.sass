@@ -95,6 +95,56 @@
 		cursor: pointer
 		img
 			height: 100%
+	.control
+		background-color: $dark
+		&__section
+			&-title
+				margin-top: -15px
+				margin-bottom: 3.214rem
+		&__video
+			margin: auto
+			margin-bottom: 2.428rem
+			max-width: 28.333rem
+			min-height: 17.25rem
+		&__text
+			margin-bottom: 3rem
+			max-width: 28.33rem
+			font-size: 1.166rem	
+			line-height: 169.8%
+			color: $light
+			&::before
+				margin-bottom: 1rem
+		&__input-group
+			display: flex
+			flex-direction: column
+			flex-basis: 100%
+			margin-bottom: 5rem
+		&__label
+			margin-bottom: -2px
+			font-size: 1.25rem
+			color: rgba(#ffffff, 0.5)
+		&__input
+			border-bottom: 1px solid #ffffff
+			font-size: 1.5rem
+			&::placeholder
+				color: $light
+		&__policy
+			margin-top: -4rem
+			padding-bottom: 4.4rem
+			&-label
+				justify-content: flex-start
+				color: $light
+		&__button
+			order: 5
+			margin-bottom: -3.5rem
+			padding: 1.60rem 4.785rem
+			width: 100%
+			border-radius: 0
+			font-size: 1.25rem
+	.video
+		&__play
+			width: 60px
+			height: 60px
 
 @media screen and ( max-width: 570px)
 	.section

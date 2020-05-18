@@ -146,4 +146,7 @@ $(document).ready(function () {
 		$('.steps-list__item').eq(index).addClass('steps-list__item--active');
 	}));
 
+//Инициализируем библиотеку анимаций
+	new WOW().init();
+
 });

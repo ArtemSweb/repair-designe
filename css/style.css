@@ -552,7 +552,7 @@ img {
   justify-content: center;
   align-items: flex-start;
   background: url(../img/hero-bg.jpg) no-repeat #131313 center/cover;
-  height: 100vh;
+  height: 97vh;
   color: #ffffff; }
   .hero::before {
     content: '';
@@ -716,63 +716,6 @@ img {
 .video__play {
   position: relative;
   margin: auto; }
-
-@media screen and (max-width: 760px) {
-  .control {
-    background-color: #131313; }
-    .control__section-title {
-      margin-top: -15px;
-      margin-bottom: 3.214rem; }
-    .control__video {
-      margin: auto;
-      margin-bottom: 2.428rem;
-      max-width: 28.333rem;
-      min-height: 17.25rem; }
-    .control__text {
-      max-width: 28.33rem;
-      font-size: 1.166rem;
-      line-height: 169.8%;
-      margin-bottom: 3rem; }
-      .control__text::before {
-        margin-bottom: 1rem; }
-    .control__input-group {
-      display: flex;
-      flex-direction: column;
-      flex-basis: 100%;
-      margin-bottom: 5rem; }
-    .control__label {
-      margin-bottom: -2px;
-      font-size: 1.25rem;
-      color: rgba(255, 255, 255, 0.5); }
-    .control__input {
-      border-bottom: 1px solid #ffffff;
-      font-size: 1.5rem; }
-      .control__input::-webkit-input-placeholder {
-        color: #ffffff; }
-      .control__input::-moz-placeholder {
-        color: #ffffff; }
-      .control__input:-ms-input-placeholder {
-        color: #ffffff; }
-      .control__input::-ms-input-placeholder {
-        color: #ffffff; }
-      .control__input::placeholder {
-        color: #ffffff; }
-    .control__policy {
-      margin-top: -4rem;
-      padding-bottom: 4.4rem; }
-      .control__policy-label {
-        justify-content: flex-start;
-        color: #ffffff; }
-    .control__button {
-      order: 5;
-      margin-bottom: -3.5rem;
-      padding: 1.60rem 4.785rem;
-      width: 100%;
-      border-radius: 0;
-      font-size: 1.25rem; }
-  .video__play {
-    width: 60px;
-    height: 60px; } }
 
 .types__section-title {
   margin-bottom: 3rem; }
@@ -1151,7 +1094,63 @@ img {
     padding: 10px;
     cursor: pointer; }
     .pageup img {
-      height: 100%; } }
+      height: 100%; }
+  .control {
+    background-color: #131313; }
+    .control__section-title {
+      margin-top: -15px;
+      margin-bottom: 3.214rem; }
+    .control__video {
+      margin: auto;
+      margin-bottom: 2.428rem;
+      max-width: 28.333rem;
+      min-height: 17.25rem; }
+    .control__text {
+      margin-bottom: 3rem;
+      max-width: 28.33rem;
+      font-size: 1.166rem;
+      line-height: 169.8%;
+      color: #ffffff; }
+      .control__text::before {
+        margin-bottom: 1rem; }
+    .control__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      margin-bottom: 5rem; }
+    .control__label {
+      margin-bottom: -2px;
+      font-size: 1.25rem;
+      color: rgba(255, 255, 255, 0.5); }
+    .control__input {
+      border-bottom: 1px solid #ffffff;
+      font-size: 1.5rem; }
+      .control__input::-webkit-input-placeholder {
+        color: #ffffff; }
+      .control__input::-moz-placeholder {
+        color: #ffffff; }
+      .control__input:-ms-input-placeholder {
+        color: #ffffff; }
+      .control__input::-ms-input-placeholder {
+        color: #ffffff; }
+      .control__input::placeholder {
+        color: #ffffff; }
+    .control__policy {
+      margin-top: -4rem;
+      padding-bottom: 4.4rem; }
+      .control__policy-label {
+        justify-content: flex-start;
+        color: #ffffff; }
+    .control__button {
+      order: 5;
+      margin-bottom: -3.5rem;
+      padding: 1.60rem 4.785rem;
+      width: 100%;
+      border-radius: 0;
+      font-size: 1.25rem; }
+  .video__play {
+    width: 60px;
+    height: 60px; } }
 
 @media screen and (max-width: 570px) {
   .section-title__text {
