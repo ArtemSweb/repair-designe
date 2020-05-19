@@ -40,10 +40,14 @@
 	&__checkbox
 		opacity: 0
 		visibility: hidden
-		&:checked + 
+		&:checked +
+			.form__invalid +
+				.policy__label
+					&::before
+						background: $accent url('../img/svg/check.svg') no-repeat center
 			.policy__label
 				&::before
-					background: $accent url('../img/svg/check.svg') no-repeat center			
+					background: $accent url('../img/svg/check.svg') no-repeat center
 	&__label
 		display: flex
 		align-items: center
@@ -72,10 +76,9 @@
 		height: 100%
 		transform: rotate(180deg)
 
-.form
+div.form
 	&__invalid
 		color: #cc2200
 input
 	&.form__invalid
-		color: $light
 		border-bottom: 1px solid #cc2200	

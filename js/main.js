@@ -177,6 +177,9 @@ $(document).ready(function () {
 					minlength: 17, //c учетом пробелов, скобочек и дефисов
 				},
 				userQuestion: "required",
+				policyCheckbox: {
+					required: true
+				},
 				// compound rule
 				userEmail: {
 					required: true,
@@ -191,6 +194,7 @@ $(document).ready(function () {
 				},
 				userPhone: "Телефон обязателен",
 				userQuestion: "Задайте свой вопрос",
+				policyCheckbox: "Отметьте, чтобы продолжить",
 				userEmail: {
 					required: "Обязательно укажите email",
 					email: "Введите в формате: name@domain.com"

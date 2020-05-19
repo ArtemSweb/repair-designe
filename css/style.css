@@ -489,6 +489,8 @@ img {
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
+  .policy__checkbox:checked + .form__invalid + .policy__label::before {
+    background: #e3b873 url("../img/svg/check.svg") no-repeat center; }
   .policy__checkbox:checked + .policy__label::before {
     background: #e3b873 url("../img/svg/check.svg") no-repeat center; }
 
@@ -521,11 +523,10 @@ img {
     height: 100%;
     transform: rotate(180deg); }
 
-.form__invalid {
+div.form__invalid {
   color: #cc2200; }
 
 input.form__invalid {
-  color: #ffffff;
   border-bottom: 1px solid #cc2200; }
 
 @-webkit-keyframes emerge {
@@ -1087,6 +1088,7 @@ input.form__invalid {
     display: flex;
     flex-direction: column; }
   .modal__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 3.428rem; }
