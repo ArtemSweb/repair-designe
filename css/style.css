@@ -510,6 +510,13 @@ img {
     height: 100%;
     transform: rotate(180deg); }
 
+.form__invalid {
+  color: #cc2200; }
+
+input.form__invalid {
+  color: #ffffff;
+  border-bottom: 1px solid #cc2200; }
+
 @-webkit-keyframes emerge {
   0% {
     opacity: 0;
@@ -1055,7 +1062,7 @@ img {
     max-width: 36.36rem;
     position: relative;
     padding: 2.357rem 3.7rem 1.928rem;
-    background: #131313 url(../img/bg-lines.svg) no-repeat center;
+    background: #131313 url(../img/bg-lines.svg) no-repeat center/cover;
     color: #ffffff; }
   .modal__close {
     position: absolute;
@@ -1093,12 +1100,6 @@ img {
     color: #ffffff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.2s; }
-
-label.invalid {
-  color: #cc2200; }
-
-input.invalid {
-  border-bottom: 1px solid #cc2200; }
 
 @media screen and (max-width: 1300px) {
   html {

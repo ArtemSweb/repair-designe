@@ -163,7 +163,8 @@ $(document).ready(function () {
 //валидация форм!
 	const validForm = (selector) => {
 		$(selector).validate({
-			errorClass: "invalid",
+			errorClass: "form__invalid",
+			errorElement: "div",
 			rules: {
 				// simple rule, converted to {required:true}
 				userName: {
