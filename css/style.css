@@ -1078,10 +1078,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 0; }
+  .modal__input:last-of-type {
+    margin-bottom: 0; }
   .modal__policy {
     margin-bottom: 2.4rem; }
   .modal__button {
@@ -1091,6 +1093,12 @@ img {
     color: #ffffff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.2s; }
+
+label.invalid {
+  color: #cc2200; }
+
+input.invalid {
+  border-bottom: 1px solid #cc2200; }
 
 @media screen and (max-width: 1300px) {
   html {

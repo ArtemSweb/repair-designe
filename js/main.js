@@ -160,4 +160,52 @@ $(document).ready(function () {
 //Инициализируем библиотеку анимаций
 	new WOW().init();
 
+//валидация форм!
+	const validForm = (selector) => {
+		$(selector).validate({
+			errorClass: "invalid",
+			rules: {
+				// simple rule, converted to {required:true}
+				userName: {
+					required: true,
+					minlength: 2,
+					maxlength: 15
+				},
+				userPhone: {
+					required: true,
+					minlength: 17, //c учетом пробелов, скобочек и дефисов
+				},
+				userQuestion: "required",
+				// compound rule
+				userEmail: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				userName: {
+					required: "Имя обязательно",
+					minlength: jQuery.validator.format("Имя не короче {0} букв!"),
+					maxlength: jQuery.validator.format("Имя не длиннее {0}букв!"),
+				},
+				userPhone: "Телефон обязателен",
+				userQuestion: "Задайте свой вопрос",
+				userEmail: {
+					required: "Обязательно укажите email",
+					email: "Введите в формате: name@domain.com"
+				}
+			}
+		});
+	}
+	
+	validForm('#modal-form');
+	validForm('#control-form');
+	validForm('#footer-form');
+	
+//Маска для телефона
+	$('[type=tel]').mask('+7(000) 000-00-00', {
+		placeholder: "+7 (___) ___-__-__"
+	});
+	
+
 });
