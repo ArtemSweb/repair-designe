@@ -146,6 +146,45 @@
 		&__play
 			width: 60px
 			height: 60px
+	.footer
+		background: $dark
+		&::before
+			display: none
+		&__wrap
+			background: transparent
+		&__title
+			font-size: 1.66rem
+			margin-bottom: 4.6rem
+		&__input-group
+			display: flex
+			flex-direction: column
+			flex-basis: 100%
+			margin-bottom: 5rem
+		&__label
+			margin-bottom: -2px
+			font-size: 1.25rem
+			color: rgba(#ffffff, 0.5)
+		&__input
+			border-bottom: 1px solid #ffffff
+			font-size: 1.5rem
+			color: $light
+			&::placeholder
+				color: $light
+			&-group
+				&--full-width
+					margin-bottom: 1rem
+		&__policy
+			margin-bottom: 5.6rem
+			&-label
+				justify-content: flex-start
+				color: $light
+		&__button
+			order: 5
+			margin-bottom: -3.5rem
+			padding: 1.60rem 4.785rem
+			width: 100%
+			border-radius: 0
+			font-size: 1.25rem
 
 @media screen and ( max-width: 570px)
 	.section
