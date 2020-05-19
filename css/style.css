@@ -337,6 +337,17 @@ img {
     text-align: center;
     font-family: "Yeseva One", cursive;
     color: #131313; }
+    .section-title__description {
+      text-transform: none;
+      margin: 0 auto;
+      margin-top: 1.64rem;
+      max-width: 52.8rem;
+      font-size: 1.428rem;
+      font-weight: 400;
+      font-family: "Futura Book", sans-serif;
+      line-height: 135%; }
+      .section-title__description--small {
+        max-width: 31.85rem; }
     .section-title--light {
       color: #ffffff; }
     .section-title--dark {
@@ -787,16 +798,6 @@ input.form__invalid {
   .designe__section-title {
     margin-bottom: 3rem; }
 
-.section-title__description {
-  text-transform: none;
-  margin: 0 auto;
-  margin-top: 1.64rem;
-  max-width: 52.8rem;
-  font-size: 1.428rem;
-  font-weight: 400;
-  font-family: "Futura Book", sans-serif;
-  line-height: 135%; }
-
 .card {
   position: relative; }
   .card__pricetag--long {
@@ -997,7 +998,7 @@ input.form__invalid {
     background-color: rgba(19, 19, 19, 0.6); }
   .footer__wrap {
     position: relative;
-    background-color: #181818;
+    background: #181818 url(../img/bg-lines.svg) no-repeat center/cover;
     max-width: 63.07rem;
     margin: auto;
     margin-bottom: 3.714rem;
@@ -1247,7 +1248,8 @@ input.form__invalid {
     .footer::before {
       display: none; }
     .footer__wrap {
-      background: transparent; }
+      background: transparent;
+      padding: 0; }
     .footer__title {
       font-size: 1.66rem;
       margin-bottom: 4.6rem; }
@@ -1274,8 +1276,10 @@ input.form__invalid {
         color: #ffffff; }
       .footer__input::placeholder {
         color: #ffffff; }
-      .footer__input-group--full-width {
-        margin-bottom: 1rem; }
+      .footer__input-group {
+        margin-bottom: 4rem; }
+        .footer__input-group--full-width {
+          margin-bottom: 1rem; }
     .footer__policy {
       margin-bottom: 5.6rem; }
       .footer__policy-label {
