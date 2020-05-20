@@ -1342,13 +1342,19 @@ input.form__invalid {
     margin-bottom: 1.85rem;
     margin-right: 0;
     width: 100%;
-    font-size: 1.08rem; } }
+    font-size: 1.08rem; }
+  .modal__input-group {
+    margin: 0.5rem; }
+  .modal__button {
+    width: 100%; } }
 
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
     display: none; } }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-height: 530px) {
+  .title {
+    font-size: 1.857rem; }
   .control__input-group {
     margin-bottom: 1rem; }
   .control__policy {

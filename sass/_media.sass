@@ -236,12 +236,20 @@
 			margin-right: 0
 			width: 100%
 			font-size: 1.08rem
+	.modal
+		&__input
+			&-group
+				margin: 0.5rem
+		&__button
+			width: 100%		
 @media screen and ( max-height: 530px)
 	.hero
 		&__scroll-down
 			display: none
 
-@media screen and (orientation:landscape)
+@media screen and (orientation:landscape) and (max-height: 530px)
+	.title
+		font-size: 1.857rem
 	.control
 		&__input
 			&-group
@@ -263,4 +271,4 @@
 			&-group
 				margin: 0.5rem
 		&__button
-			width: 100%		
+			width: 100%	
