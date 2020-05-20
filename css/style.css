@@ -806,6 +806,8 @@ input.form__invalid {
     bottom: -1px; }
   .designe__section-title {
     margin-bottom: 3rem; }
+  .designe__pricetag {
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1); }
 
 .card {
   position: relative; }
@@ -991,7 +993,7 @@ input.form__invalid {
   padding-bottom: 88px; }
   .team__row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     max-width: 1028px;
     padding-top: 6.07rem;
     margin: 0 auto;
@@ -1027,7 +1029,7 @@ input.form__invalid {
     .team__card-icon {
       position: absolute;
       top: -30px;
-      left: 0;
+      left: -30px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1035,6 +1037,8 @@ input.form__invalid {
       width: 70px;
       height: 70px;
       box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
+    .team__card__image {
+      width: 100%; }
   .team__description {
     padding-top: 1.571rem;
     width: 16.642rem;
@@ -1224,6 +1228,14 @@ input.form__invalid {
       line-height: 1.666rem; }
     .team__description {
       width: 19.41rem; } }
+
+@media screen and (max-width: 900px) {
+  .team__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .team__card {
+    margin-bottom: 7rem; } }
 
 @media screen and (max-width: 760px) {
   .section {
