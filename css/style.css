@@ -1347,3 +1347,22 @@ input.form__invalid {
 @media screen and (max-height: 530px) {
   .hero__scroll-down {
     display: none; } }
+
+@media screen and (orientation: landscape) {
+  .control__input-group {
+    margin-bottom: 1rem; }
+  .control__policy {
+    margin-top: 0;
+    margin-bottom: -2rem; }
+  .footer__title {
+    margin-bottom: 1rem; }
+  .footer__input-group {
+    margin-bottom: 1.5rem; }
+  .footer__policy {
+    margin-bottom: 1.6rem; }
+  .modal {
+    overflow-y: hidden; }
+    .modal__input-group {
+      margin: 0.5rem; }
+    .modal__button {
+      width: 100%; } }
