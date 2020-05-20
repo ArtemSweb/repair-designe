@@ -791,7 +791,8 @@ input.form__invalid {
   text-transform: uppercase;
   background-color: #e3b873;
   color: #ffffff;
-  padding: 1.1rem 2.5rem; }
+  padding: 1.1rem 2.5rem;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
 
 .designe {
   position: relative;
@@ -991,7 +992,9 @@ input.form__invalid {
   .team__row {
     display: flex;
     justify-content: space-around;
+    max-width: 1028px;
     padding-top: 6.07rem;
+    margin: 0 auto;
     margin-bottom: 4rem; }
   .team__card {
     position: relative;
@@ -1030,7 +1033,8 @@ input.form__invalid {
       justify-content: center;
       background-color: #e3b873;
       width: 70px;
-      height: 70px; }
+      height: 70px;
+      box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
   .team__description {
     padding-top: 1.571rem;
     width: 16.642rem;
@@ -1052,36 +1056,6 @@ input.form__invalid {
       height: 2px;
       background-color: #e3b873;
       border-radius: 30px; }
-
-@media screen and (max-width: 992px) {
-  .team {
-    position: relative;
-    margin-top: 0;
-    padding-top: 6.33rem;
-    background-color: #131313; }
-    .team__row {
-      margin-bottom: 0; }
-    .team__card-icon {
-      position: absolute;
-      top: -30px;
-      left: -30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #e3b873;
-      width: 70px;
-      height: 70px; }
-    .team__card-title {
-      font-size: 1.5rem;
-      line-height: 2.083rem; }
-    .team__card-text {
-      font-size: 1.5rem;
-      line-height: 2.166rem; }
-    .team__card-accent {
-      font-size: 1.083rem;
-      line-height: 1.666rem; }
-    .team__description {
-      width: 19.41rem; } }
 
 .footer {
   position: relative;
