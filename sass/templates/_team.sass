@@ -1,5 +1,6 @@
 .team
 	margin-top: -35rem
+	padding-bottom: 88px
 	&__row
 		display: flex
 		justify-content: space-around
@@ -15,7 +16,6 @@
 		font-family: $ff-main
 		&-title
 			margin: 0
-			// padding: 1.571rem 1.5rem 0.642rem 1.5rem
 			color: lighten($dark, 2%)
 			font-size: 1.285rem
 			line-height: 1.785rem
@@ -30,6 +30,7 @@
 			margin: 0
 			padding: 1rem 1.642rem
 			background-color: $accent
+			color: $light
 			text-transform: uppercase
 			font-size: 0.928rem
 			line-height: 1.428rem
@@ -64,3 +65,34 @@
 			height: 2px
 			background-color: $accent
 			border-radius: 30px
+
+@media screen and ( max-width: 992px)
+	.team
+		position: relative
+		margin-top: 0
+		padding-top: 6.33rem
+		background-color: $dark
+		&__row
+			margin-bottom: 0
+		&__card
+			&-icon
+				position: absolute
+				top: -30px
+				left: -30px
+				display: flex
+				align-items: center
+				justify-content: center
+				background-color: $accent
+				width: 70px
+				height: 70px
+			&-title
+				font-size: 1.5rem	
+				line-height: 2.083rem
+			&-text
+				font-size: 1.5rem
+				line-height: 2.166rem
+			&-accent
+				font-size: 1.083rem
+				line-height: 1.666rem	
+		&__description
+			width: 19.41rem

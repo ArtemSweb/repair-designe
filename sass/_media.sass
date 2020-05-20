@@ -4,10 +4,11 @@
 	.nav
 		&__item
 			margin-right: 1rem
-@media screen and ( max-width: 1100px)
-	.section--mobile-hidden
-		display: none			
+// @media screen and ( max-width: 1100px)
+		
 @media screen and ( max-width: 992px)
+	.mobile-hidden
+		display: none	
 	.hero
 		padding: 147px 0 60px 0
 		height: auto
@@ -20,6 +21,35 @@
 			margin-left: 0
 	.swiper-slide__heading--block
 		display: block
+	.team
+		position: relative
+		margin-top: 0
+		padding-top: 6.33rem
+		background-color: $dark
+		&__row
+			margin-bottom: 0
+		&__card
+			&-icon
+				position: absolute
+				top: -30px
+				left: -30px
+				display: flex
+				align-items: center
+				justify-content: center
+				background-color: $accent
+				width: 70px
+				height: 70px
+			&-title
+				font-size: 1.5rem	
+				line-height: 2.083rem
+			&-text
+				font-size: 1.5rem
+				line-height: 2.166rem
+			&-accent
+				font-size: 1.083rem
+				line-height: 1.666rem	
+		&__description
+			width: 19.41rem	
 @media screen and ( max-width: 760px)
 	.section
 		padding: 1.5rem 0
@@ -38,6 +68,7 @@
 			margin-top: -12rem
 			margin-left: 0	
 	.designe
+		margin-bottom: -8rem
 		background-color: #181818
 	.section
 		&-title
@@ -189,7 +220,8 @@
 			width: 100%
 			border-radius: 0
 			font-size: 1.25rem
-
+	.footer
+		margin-top: -5rem;
 	div.form
 		&__invalid
 			position: absolute
