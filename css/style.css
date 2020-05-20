@@ -485,6 +485,8 @@ img {
       color: #131313; }
     .input--dark::placeholder {
       color: #131313; }
+  .input-group {
+    position: relative; }
 
 .policy__checkbox {
   opacity: 0;
@@ -524,6 +526,11 @@ img {
     transform: rotate(180deg); }
 
 div.form__invalid {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+  width: 100%;
+  text-align: center;
   color: #cc2200; }
 
 input.form__invalid {
@@ -1259,7 +1266,11 @@ input.form__invalid {
       display: flex;
       flex-direction: column;
       flex-basis: 100%;
-      margin-bottom: 5rem; }
+      margin-bottom: 5.5rem; }
+      .footer__input-group:nth-child(3) {
+        margin-bottom: 0rem; }
+      .footer__input-group--full-width {
+        margin-bottom: 1rem; }
     .footer__label {
       margin-bottom: -2px;
       font-size: 1.25rem;
@@ -1278,14 +1289,11 @@ input.form__invalid {
         color: #ffffff; }
       .footer__input::placeholder {
         color: #ffffff; }
-      .footer__input-group {
-        margin-bottom: 4rem; }
-        .footer__input-group--full-width {
-          margin-bottom: 1rem; }
     .footer__policy {
       margin-bottom: 5.6rem; }
       .footer__policy-label {
         justify-content: flex-start;
+        font-size: 1.33rem;
         color: #ffffff; }
     .footer__button {
       order: 5;
@@ -1293,7 +1301,14 @@ input.form__invalid {
       padding: 1.60rem 4.785rem;
       width: 100%;
       border-radius: 0;
-      font-size: 1.25rem; } }
+      font-size: 1.25rem; }
+  div.form__invalid {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    text-align: center;
+    color: #cc2200; } }
 
 @media screen and (max-width: 570px) {
   .section-title__text {

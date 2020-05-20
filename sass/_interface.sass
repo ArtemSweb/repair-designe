@@ -36,6 +36,8 @@
 		color: $dark	
 		&::placeholder
 			color: $dark
+	&-group
+		position: relative
 .policy
 	&__checkbox
 		opacity: 0
@@ -78,6 +80,11 @@
 
 div.form
 	&__invalid
+		position: absolute
+		top: 3.5rem
+		left: 0rem
+		width: 100%
+		text-align: center
 		color: #cc2200
 input
 	&.form__invalid
