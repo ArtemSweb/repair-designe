@@ -1187,6 +1187,8 @@ input.form__invalid {
     margin-right: 1rem; } }
 
 @media screen and (max-width: 992px) {
+  .section-title__heading {
+    margin-top: 0; }
   .mobile-hidden {
     display: none; }
   .hero {
@@ -1252,9 +1254,8 @@ input.form__invalid {
     .card__text {
       margin-top: -12rem;
       margin-left: 0; }
-  .designe {
-    margin-bottom: -8rem;
-    background-color: #181818; }
+    .card__pricetag {
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3); }
   .section-title--light {
     color: #ffffff; }
   .section-title__description {
@@ -1356,6 +1357,10 @@ input.form__invalid {
   .video__play {
     width: 60px;
     height: 60px; }
+  .designe {
+    background-color: #131313; }
+  .team {
+    padding-top: 0; }
   .footer {
     background: #131313; }
     .footer::before {
