@@ -1208,8 +1208,12 @@ input.form__invalid {
     padding-top: 6.33rem;
     background-color: #131313; }
     .team__row {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     .team__card {
+      margin-bottom: 7rem;
       margin-left: 30px; }
       .team__card-icon {
         position: absolute;
@@ -1233,14 +1237,6 @@ input.form__invalid {
         line-height: 1.666rem; }
     .team__description {
       width: 19.41rem; } }
-
-@media screen and (max-width: 900px) {
-  .team__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .team__card {
-    margin-bottom: 7rem; } }
 
 @media screen and (max-width: 760px) {
   .section {
