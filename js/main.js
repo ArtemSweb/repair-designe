@@ -140,7 +140,6 @@ $(document).ready(function () {
 //Чтоб переключало список при клике на точки пагинации
 	stepsSwiper.on('slideChange', (function () {
 		var index = stepsSwiper.activeIndex - 1; //именно -1, чтоб не перескакивало через элемент списка!
-		console.log(index);
 		if (index === 6) index = 0;
 		$('.steps-list__item').removeClass('steps-list__item--active');
 		$('.steps-list__item').eq(index).addClass('steps-list__item--active');

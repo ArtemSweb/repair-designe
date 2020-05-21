@@ -416,6 +416,9 @@ img {
   align-items: flex-start;
   justify-content: space-between; }
 
+.col-25 {
+  max-width: 30%; }
+
 .col-30 {
   flex-basis: 30%; }
 
@@ -428,6 +431,9 @@ img {
 
 .col-70 {
   flex-basis: 70%; }
+
+.col-75 {
+  max-width: 70%; }
 
 .button {
   padding: 13px 24px;
@@ -891,7 +897,7 @@ input.form__invalid {
   margin-bottom: -15rem; }
 
 .steps {
-  padding-bottom: 25rem; }
+  padding-bottom: 31rem; }
   .steps__heading {
     font-size: 1.929rem; }
   .steps__word::after {
@@ -905,17 +911,16 @@ input.form__invalid {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 100%;
-    margin-left: 36rem;
+    margin-left: 40%;
     margin-top: -1.2rem;
     padding: 0;
     z-index: 50; }
     .steps-list__item {
-      width: 18%;
+      width: 33%;
       opacity: 0.3;
       font-size: 1.07rem;
-      margin-bottom: 2.9rem;
-      cursor: pointer;
-      margin-right: 11rem; }
+      margin-bottom: 1.4rem;
+      cursor: pointer; }
       .steps-list__item:nth-child(3n) {
         margin-right: 0;
         width: 7.14rem; }
@@ -929,6 +934,8 @@ input.form__invalid {
       font-size: 1.07rem;
       line-height: 1.785rem;
       margin-top: 0.7rem; }
+  .steps__pagination {
+    margin-top: 4rem; }
   .steps__swiper-container {
     margin-top: -11.9rem; }
   .steps__swiper-slide {
@@ -937,7 +944,7 @@ input.form__invalid {
     flex-wrap: nowrap; }
     .steps__swiper-slide-value {
       position: relative;
-      max-width: 24.07rem;
+      max-width: 20%;
       margin-top: 3rem;
       margin-right: 16rem; }
     .steps__swiper-slide-numberOf {
@@ -978,18 +985,19 @@ input.form__invalid {
   .steps__swiper-button-next {
     background: url("../img/svg/arrow-next.svg") no-repeat center; }
 
-.swiper-slide-image {
+.swiper-slide__image {
   max-width: 760px;
-  margin-top: 11rem;
+  max-height: 372px;
+  margin-top: 13rem;
   overflow: hidden; }
-  .swiper-slide-image img {
+  .swiper-slide__image img {
     width: 100%; }
 
 .section-title__word--mr::after {
   margin-left: 7rem; }
 
 .team {
-  margin-top: -35rem;
+  margin-top: -32rem;
   padding-bottom: 88px; }
   .team__row {
     display: flex;
@@ -1037,12 +1045,12 @@ input.form__invalid {
       width: 70px;
       height: 70px;
       box-shadow: 0px 5px 20px rgba(227, 184, 115, 0.5); }
-    .team__card-image {
+    .team__card__image {
       width: 100%; }
   .team__description {
     padding-top: 1.571rem;
     width: 16.642rem;
-    margin-top: -6.7rem;
+    margin-top: -7rem;
     background-color: #ffffff; }
   .team__text {
     max-width: 40.785rem;
