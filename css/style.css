@@ -936,7 +936,7 @@ input.form__invalid {
       line-height: 1.785rem;
       margin-top: 0.7rem; }
   .steps__pagination {
-    margin-top: 4rem; }
+    margin-top: 0rem; }
   .steps__swiper-container {
     margin-top: -11.9rem; }
   .steps__swiper-slide {
@@ -1213,7 +1213,7 @@ input.form__invalid {
   .steps__swiper-slide-numberOf {
     font-size: 1.5rem; }
   .steps__pagination {
-    margin-top: 7rem; } }
+    margin-top: 0rem; } }
 
 @media screen and (max-width: 992px) {
   .section-title__heading {
