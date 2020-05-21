@@ -984,11 +984,12 @@ input.form__invalid {
     left: 0; }
   .steps__swiper-button-next {
     background: url("../img/svg/arrow-next.svg") no-repeat center; }
+  .steps__image {
+    max-width: 760px;
+    max-height: 372px;
+    margin-top: 13rem; }
 
 .swiper-slide__image {
-  max-width: 760px;
-  max-height: 372px;
-  margin-top: 13rem;
   overflow: hidden; }
   .swiper-slide__image img {
     width: 100%; }
@@ -1192,7 +1193,23 @@ input.form__invalid {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .steps__title {
+    font-size: 2.25rem; }
+  .steps__subtitle {
+    font-size: 1.25rem; }
+  .steps-list__text {
+    font-size: 1.25rem; }
+  .steps-list__number {
+    font-size: 1.25rem; }
+  .steps__swiper-slide-heading {
+    font-size: 1.25rem; }
+  .steps__swiper-slide-text {
+    font-size: 1.25rem; }
+  .steps__swiper-slide-numberOf {
+    font-size: 1.5rem; }
+  .steps__pagination {
+    margin-top: 7rem; } }
 
 @media screen and (max-width: 992px) {
   .section-title__heading {
