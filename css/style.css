@@ -1203,6 +1203,9 @@ input.form__invalid {
     font-size: 1.25rem; }
   .steps-list__number {
     font-size: 1.25rem; }
+  .steps-list__item:nth-child(3n) {
+    margin-right: 0;
+    width: 10.14rem; }
   .steps__swiper-slide-heading {
     font-size: 1.25rem; }
   .steps__swiper-slide-text {
