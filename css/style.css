@@ -1209,25 +1209,27 @@ input.form__invalid {
     background-color: #131313; }
     .team__row {
       margin-bottom: 0; }
-    .team__card-icon {
-      position: absolute;
-      top: -30px;
-      left: -30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #e3b873;
-      width: 70px;
-      height: 70px; }
-    .team__card-title {
-      font-size: 1.5rem;
-      line-height: 2.083rem; }
-    .team__card-text {
-      font-size: 1.5rem;
-      line-height: 2.166rem; }
-    .team__card-accent {
-      font-size: 1.083rem;
-      line-height: 1.666rem; }
+    .team__card {
+      margin-left: 35px; }
+      .team__card-icon {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e3b873;
+        width: 70px;
+        height: 70px; }
+      .team__card-title {
+        font-size: 1.5rem;
+        line-height: 2.083rem; }
+      .team__card-text {
+        font-size: 1.5rem;
+        line-height: 2.166rem; }
+      .team__card-accent {
+        font-size: 1.083rem;
+        line-height: 1.666rem; }
     .team__description {
       width: 19.41rem; } }
 
