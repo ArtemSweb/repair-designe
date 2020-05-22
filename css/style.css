@@ -1127,6 +1127,56 @@ input.form__invalid {
     position: relative;
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__place {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .footer__contact {
+    margin: 0 auto;
+    margin-bottom: 26px;
+    max-width: 540px;
+    color: #e3b873;
+    font-family: "Yeseva One", cursive;
+    font-size: 1.428rem;
+    line-height: 2rem;
+    text-transform: uppercase; }
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.09rem; }
+  .footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    margin: 0 8px;
+    padding: 7px;
+    background: #e3b873;
+    border-radius: 50%; }
+  .footer__map {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    max-width: 925px;
+    min-height: 465px; }
+
+@media screen and (max-width: 760px) {
+  .footer__contact {
+    padding: 1rem;
+    margin-bottom: 1rem; }
+  .footer__place {
+    padding-top: 46px;
+    flex-direction: column-reverse; }
+  .footer__link {
+    width: 39px;
+    height: 39px; }
+    .footer__link img {
+      width: 100%; }
+  .footer__map {
+    margin-bottom: 2rem;
+    min-height: auto;
+    height: 255px; } }
 
 .modal {
   opacity: 0;
@@ -1215,7 +1265,7 @@ input.form__invalid {
   .steps__pagination {
     margin-top: 0rem; } }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
   .section-title__heading {
     margin-top: 0; }
   .mobile-hidden {

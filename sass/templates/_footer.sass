@@ -54,3 +54,55 @@
 		position: relative
 		background-color: $dark
 		padding: 4.285rem 0
+	&__place
+		position: relative
+		display: flex
+		flex-direction: column
+		text-align: center
+	&__contact
+		margin: 0 auto
+		margin-bottom: 26px
+		max-width: 540px
+		color: $accent
+		font-family: $ff-main
+		font-size: 1.428rem
+		line-height: 2rem
+		text-transform: uppercase	
+	&__links
+		display: flex
+		justify-content: center
+		margin-bottom: 3.09rem
+	&__link
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 28px
+		height: 28px
+		margin: 0 8px
+		padding: 7px
+		background: $accent
+		border-radius: 50%
+	&__map
+		margin: 0 auto
+		margin-bottom: 4rem
+		max-width: 925px
+		min-height: 465px
+
+
+@media screen and ( max-width: 760px)
+	.footer
+		&__contact
+			padding: 1rem
+			margin-bottom: 1rem
+		&__place
+			padding-top: 46px
+			flex-direction: column-reverse
+		&__link
+			width: 39px
+			height: 39px
+			img
+				width: 100%
+		&__map
+			margin-bottom: 2rem
+			min-height: auto
+			height: 255px
