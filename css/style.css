@@ -1000,7 +1000,7 @@ input.form__invalid {
 
 .team {
   margin-top: -32rem;
-  padding-bottom: 88px; }
+  padding-bottom: 13px; }
   .team__row {
     display: flex;
     justify-content: space-between;
@@ -1071,6 +1071,69 @@ input.form__invalid {
       background-color: #e3b873;
       border-radius: 30px; }
 
+.clients {
+  padding-bottom: 27.185rem; }
+  .clients__row {
+    margin-top: 3.2rem; }
+  .clients__card {
+    position: relative;
+    padding: 1.71rem 2.29rem 4rem 1.5rem;
+    max-width: 27rem;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    flex-basis: 30%; }
+    .clients__card:nth-child(even) {
+      margin: 0 10px; }
+    .clients__card-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+    .clients__card-title {
+      line-height: 1.786rem;
+      color: #181818;
+      margin-top: 0.9rem;
+      margin-left: 23px; }
+
+.card__avatar {
+  min-width: 5.42rem;
+  height: 5.42rem;
+  border-radius: 50%;
+  overflow: hidden; }
+  .card__avatar img {
+    width: 100%; }
+
+.card__feedback {
+  color: #959595;
+  font-size: 15px;
+  line-height: 180%;
+  font-family: "Futura Book", sans-serif; }
+
+.card__labels {
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+  position: absolute;
+  bottom: 0.5rem;
+  transform: translateY(50%);
+  margin-left: -1.5rem;
+  display: flex; }
+
+.card__label {
+  display: flex;
+  align-items: center;
+  max-width: 147px;
+  height: 3.857rem;
+  padding-right: 1.214rem;
+  padding-left: 1.214rem;
+  background-color: #e3b873;
+  box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.3);
+  color: #ffffff;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.21rem;
+  line-height: 1.71rem; }
+  .card__label img {
+    margin-right: 1.07rem; }
+  .card__label-area {
+    border-right: 1px solid #ffffff; }
+
 .footer {
   position: relative;
   padding-top: 3rem;
@@ -1088,6 +1151,7 @@ input.form__invalid {
     background: #181818 url(../img/bg-lines.svg) no-repeat center/cover;
     max-width: 63.07rem;
     margin: auto;
+    margin-top: -19rem;
     margin-bottom: 3.714rem;
     padding: 2.5rem; }
   .footer__title {
@@ -1160,23 +1224,6 @@ input.form__invalid {
     margin-bottom: 4rem;
     max-width: 925px;
     min-height: 465px; }
-
-@media screen and (max-width: 760px) {
-  .footer__contact {
-    padding: 1rem;
-    margin-bottom: 1rem; }
-  .footer__place {
-    padding-top: 46px;
-    flex-direction: column-reverse; }
-  .footer__link {
-    width: 39px;
-    height: 39px; }
-    .footer__link img {
-      width: 100%; }
-  .footer__map {
-    margin-bottom: 2rem;
-    min-height: auto;
-    height: 255px; } }
 
 .modal {
   opacity: 0;
@@ -1319,7 +1366,15 @@ input.form__invalid {
         font-size: 1.083rem;
         line-height: 1.666rem; }
     .team__description {
-      width: 19.41rem; } }
+      width: 19.41rem; }
+  .footer {
+    background: #131313;
+    margin-top: -1px; }
+    .footer__wrap {
+      margin-top: 0;
+      background: #131313; }
+    .footer__links {
+      margin-bottom: 6rem; } }
 
 @media screen and (max-width: 760px) {
   .section {
@@ -1500,6 +1555,21 @@ input.form__invalid {
       font-size: 1.25rem; }
   .footer {
     margin-top: -5rem; }
+    .footer__contact {
+      padding: 1rem;
+      margin-bottom: 1rem; }
+    .footer__place {
+      padding-top: 46px;
+      flex-direction: column-reverse; }
+    .footer__link {
+      width: 39px;
+      height: 39px; }
+      .footer__link img {
+        width: 100%; }
+    .footer__map {
+      margin-bottom: 2rem;
+      min-height: auto;
+      height: 255px; }
   div.form__invalid {
     position: absolute;
     top: 0rem;
