@@ -1225,6 +1225,10 @@ input.form__invalid {
     max-width: 925px;
     min-height: 465px; }
 
+.ymaps-2-1-76-map {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
+
 .modal {
   opacity: 0;
   visibility: hidden;
