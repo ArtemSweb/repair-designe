@@ -1223,9 +1223,11 @@ input.form__invalid {
     margin: 0 auto;
     margin-bottom: 4rem;
     max-width: 925px;
-    min-height: 465px;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    min-height: 465px; }
+
+.ymaps-2-1-76-ground-pane {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .modal {
   opacity: 0;
