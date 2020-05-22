@@ -5,7 +5,7 @@
 	justify-content: center
 	align-items: flex-start
 	background: url(../img/hero-bg.jpg) no-repeat $dark center / cover
-	height: 97vh
+	height: 100vh
 	color: $light
 	&::before
 		content: ''
@@ -18,6 +18,12 @@
 	&::after
 		content: ''
 		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		width: 100% 
+		height: 3rem
+		background: $dark
 	&__content
 		position: relative
 		max-width: 47.857rem
@@ -54,7 +60,7 @@
 		justify-content: center
 		align-items: center
 		left: 0
-		bottom: -3.5rem
+		bottom: 0
 		min-width: 17.64rem
 		min-height: 6.92rem
 		background-color: $dark
@@ -63,6 +69,7 @@
 		text-transform: uppercase
 		text-decoration: none
 		color: $light
+		z-index: 12
 		&::after
 			content: ''
 			background: url('../img/svg/arrow-down.svg') no-repeat center
