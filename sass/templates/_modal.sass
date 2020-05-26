@@ -1,4 +1,4 @@
-.modal
+.modal, .success
 	opacity: 0
 	visibility: hidden
 	position: fixed
@@ -60,3 +60,31 @@
 		color: $light
 		box-shadow: 0px 5px 15px rgba($accent, 0.2)
 		transition: box-shadow 0.2s
+
+.success
+	&__text
+		margin: 0
+		margin-bottom: 1rem
+		font-size: 1.5rem
+		line-height: 1.2
+		text-align: center
+		color: #ffffff
+	&__link 
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 20px 48px
+		background-color: $accent
+		color: $light
+		text-transform: uppercase
+		text-decoration: none
+		box-shadow: 0px 5px 15px rgba($accent, 0.2)
+		transition: box-shadow 0.2s
+	&__icon
+		background-color: transparent
+		margin-right: 2rem
+		width: 2rem
+		height: 2rem
+		
+.modal #policyCheckbox-error
+	text-align: left

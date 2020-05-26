@@ -11,7 +11,7 @@ function style() {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(dest('css'));
+		.pipe(dest('./css'));
 };
 
 function bs() {
@@ -31,10 +31,10 @@ function bs() {
 
 function servSass() {
 	return src("./sass/**/*.sass", "./sass/**/*.scss")
-		.pipe(sass())
+		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
 			cascade: false
-	}))
+		}))
 		.pipe(dest("./css"))
 		.pipe(browserSync.stream());
 }

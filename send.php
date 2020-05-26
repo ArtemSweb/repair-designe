@@ -22,7 +22,7 @@ try {
     $mail->Host       = 'smtp.yandex.ru';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'ArtemGameFun@yandex.ru';                     // SMTP username
-    $mail->Password   = 'kydcafqlvauakmqx';                               // SMTP password
+    $mail->Password   = 'uhavdewwtzwkenzl';                               // SMTP password
     $mail->SMTPSecure = 'TLS';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
 
@@ -32,11 +32,16 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Новая заявка с сайта';
+    $mail->Subject = 'Новая заявка с сайта Repair designe';
     $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его почта: ${userEmail}";
 
-    $mail->send();
-    header('location: thanks.html');
+    if ($mail->send()) {
+        echo "ok";
+        // header('location: thanks.html');
+    } else {
+        echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
+    }
+    
 } catch (Exception $e) {
     echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
 }

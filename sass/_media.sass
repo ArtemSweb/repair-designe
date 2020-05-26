@@ -27,7 +27,14 @@
 				&-numberOf
 					font-size: 1.5rem
 		&__pagination
-			margin-top: 0rem			
+			margin-top: 0rem	
+	.section-title__heading
+		font-size: 1.66rem
+	.clients
+		&__row
+			justify-content: space-around
+		&__card
+			margin-bottom: 5rem		
 
 // @media screen and ( max-width: 1100px)
 		
@@ -38,7 +45,7 @@
 		display: none	
 	.hero
 		padding: 147px 0 60px 0
-		height: auto
+		height: 550px
 	.nav
 		display: none
 	.hero
@@ -96,14 +103,16 @@
 			margin-top: 0
 			background: $dark
 		&__links
-			margin-bottom: 6rem	
+			margin-bottom: 6rem
+
 @media screen and ( max-width: 760px)
+	.nav
+		display: none
 	.section
 		padding: 1.5rem 0
 		&-title
 			&__heading
 				font-size: 1.833rem
-				padding-top: 4rem
 			&__text
 					font-size: 1.166rem
 	.row
@@ -313,6 +322,9 @@
 				margin-top: 2rem
 			&__heading
 				font-size: 1.75rem
+	.projects
+		padding-top: 3rem
+		padding-bottom: .5rem			
 	.contacts
 		&__phone
 			margin-right: 0
@@ -355,7 +367,9 @@
 		&__scroll-down
 			display: none
 
-@media screen and ( max-width: 370px)				
+@media screen and ( max-width: 370px)	
+	.projects
+		text-align: center			
 	.swiper
 		&-slide 
 			&__text

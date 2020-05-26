@@ -30,7 +30,11 @@ $(document).ready(function () {
 
 	var modal = $('.modal'),
 	modalBtn = $('[data-toggle=modal]'),
-	closeBtn = $('.modal__close');
+	closeBtn = $('.modal__close'),
+
+	modalSuccess = $('.success'),
+	closeBtnSuccess = $('.success__close'),
+	linkSuccess = $('.success__link');
 
 	modalBtn.on('click', function () {
 		modal.toggleClass('modal--visible');
@@ -39,6 +43,15 @@ $(document).ready(function () {
 	closeBtn.on('click', function () {
 		modal.toggleClass('modal--visible');
 	});
+
+	closeBtnSuccess.on('click', function() {
+    modalSuccess.toggleClass('success--visible');
+	});
+	
+	linkSuccess.on('click', function() {
+    modalSuccess.toggleClass('success--visible');
+	});
+	
 // закрытие модального окна нажатием на кнопку Esc
 	$(document).keydown(function (e) {
 		if (e.code == 'Escape') {
@@ -49,6 +62,19 @@ $(document).ready(function () {
 	$(document).on('click', function (e) {
 		if (modal.is(e.target)) {
 			modal.removeClass('modal--visible');
+		};
+	});
+
+	// закрытие модального окна нажатием на кнопку Esc
+	$(document).keydown(function (e) {
+		if (e.code == 'Escape') {
+			modalSuccess.removeClass('success--visible');
+		};
+	});
+// закрытие модального окна при нажатие на любое место вне его
+	$(document).on('click', function (e) {
+		if (modalSuccess.is(e.target)) {
+			modalSuccess.removeClass('success--visible');
 		};
 	});
 
@@ -198,6 +224,23 @@ $(document).ready(function () {
 					required: "Обязательно укажите email",
 					email: "Введите в формате: name@domain.com"
 				}
+			},
+			submitHandler: function(form) {
+				$.ajax({
+					type: "POST",
+					url: "send.php",
+					data: $(form).serialize(),
+					success: function (response) {
+						console.log('Ajax сработал! Ответ сервера:' + response);
+						$(form)[0].reset();
+						modal.removeClass('modal--visible');
+						modalSuccess.toggleClass('success--visible');
+						
+					},
+					error: function(response) {
+						console.error('Ajax НЕ сработал! Ответ сервера: ' + response);
+					}        
+				});
 			}
 		});
 	}
