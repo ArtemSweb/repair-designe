@@ -198,6 +198,20 @@ $(document).ready(function () {
 					required: "Обязательно укажите email",
 					email: "Введите в формате: name@domain.com"
 				}
+			},
+			submitHandler: function(form) {
+				$.ajax({
+					type: "POST",
+					url: "send.php",
+					data: $(form).serialize(),
+					success: function (response) {
+						$(form)[0].reset();
+						modalThanks.toggleClass('modal-thanks--visible');
+					},
+					error: function(response) {
+						console.error('РћС€РёР±РєР° Р·Р°РїСЂРѕСЃР° ' + response);
+					}        
+				});
 			}
 		});
 	}
