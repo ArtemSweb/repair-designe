@@ -1,30 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function(event) {
-
-// 	const modal = document.querySelector('.modal');
-// 	const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-// 	const closeBtn = document.querySelector('.modal__close');
-// //функции добавления и удаления класса модальному окну
-// 	const addModal = () => { modal.classList.add('modal--visible'); }
-// 	const removeModal = () => { modal.classList.remove('modal--visible'); }
-
-// //Присваиваем всем найденным кнопкам функцию
-// 	modalBtn.forEach((elem) => {
-// 		elem.addEventListener('click', addModal);
-// 	});
-
-// 	closeBtn.addEventListener('click', removeModal);
-
-// //закрытие по клавише esc
-// 	document.addEventListener('keyup', (event) => {
-// 		if (event.code == "Escape") removeModal();
-// 	});
-	
-// //закрытие по клику не на модальном окне
-//   document.addEventListener('click', (event) => {
-//     if (event.target == modal) removeModal();
-// 	});
-	
-// });
 
 $(document).ready(function () {
 
@@ -199,20 +172,6 @@ $(document).ready(function () {
 					email: "Введите в формате: name@domain.com"
 				}
 			},
-			submitHandler: function(form) {
-				$.ajax({
-					type: "POST",
-					url: "send.php",
-					data: $(form).serialize(),
-					success: function (response) {
-						$(form)[0].reset();
-						modalThanks.toggleClass('modal-thanks--visible');
-					},
-					error: function(response) {
-						console.error('РћС€РёР±РєР° Р·Р°РїСЂРѕСЃР° ' + response);
-					}        
-				});
-			}
 		});
 	}
 	
